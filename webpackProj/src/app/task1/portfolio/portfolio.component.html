@@ -1,0 +1,13 @@
+<div class="container pt-5">
+  <h2>Portfolio</h2>
+  <div class="d-flex flex-wrap flex-row row">
+    <div class="card bg-dark text-white text-center col-3"
+      *ngFor="let card of myCards;let i = index">
+      <div class="card-img-overlay" [ngStyle]="{'background-color': i%2 == 0?'grey':'rgb(77, 77, 77)'}">
+        <h5 class="card-title mt-4 fs-6">{{card}}</h5>
+        <hr>
+      </div>
+    </div>
+
+  </div>
+</div>

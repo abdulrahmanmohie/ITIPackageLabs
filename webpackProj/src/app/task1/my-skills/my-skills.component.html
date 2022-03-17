@@ -1,0 +1,23 @@
+<div class="container p-5">
+  <h2 class="text-center">Skills</h2>
+  <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat a similique commodi maxime,
+    eligendi facere esse quibusdam dignissimos at labore repudiandae quisquam repellendus dolorum nesciunt veniam
+    recusandae libero temporibus nostrum!</p>
+  <div class="row mt-5 gx-5">
+    <div class="col-6">
+      <h5 class="text-center">MY FOCUS</h5>
+      <div class="parntleft">
+        <span class="row">UI/UX Design</span>
+        <span class="row">Responsive Design</span>
+        <span class="row">Web Design</span>
+        <span class="row">Mobile App Design</span>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="progress mt-2" *ngFor="let skill of mySkills">
+        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0"
+          aria-valuemax="100">{{skill}}</div>
+      </div>
+    </div>
+  </div>
+</div>
